@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<style>
+	body{
+		font-family:Arial, sans-serif;
+		min-width:260px;
+		color:rgb(40, 40, 40);
+		text-align: center;
+	}
+	#main{
+		margin:30px auto;
+		padding:15px;
+		border:0px solid;
+		border-radius:5px;
+		background:#acd;
+	}
+	#title{
+		margin:10px;
+		padding:10px;
+		color:#fff;
+		border:0px solid;
+		border-radius:5px;
+		background:rgb(60, 60, 150);
+	}
+	#Main_Block{
+		margin:10px;
+		padding:0px;
+		color:rgb(0, 0, 150);
+		border:1px solid;
+		border-radius:5px;
+		border-color:rgb(60, 60, 150);
+		background:rgb(213, 222, 237);
+
+	}
+	#description{
+		margin:10px;
+		padding:0px;
+		font-size:large;
+		font-variant:small-caps;
+	}
+	#NameEmailAgeDiv{
+		margin:10px;
+		padding:0px;
+	}
+	.LineDiv{
+		display:flex;
+		margin:10px;
+		padding:2px;
+	}
+	.LabelDiv{
+		width: 45%;
+		text-align: right;
+	}
+	.inputDiv{
+		width:55%;
+		padding-left:10px;
+		text-align:left;
+	}
+	.LabelCenterDiv{
+		width: 45%;
+		padding-top: 20px;
+		text-align: right;
+	}
+	.LabelCenter2Div{
+		width: 45%;
+		padding-top: 60px;
+		text-align: right;
+	}
+	.button{
+		margin:auto;
+		padding:2px;
+	}
+	
+</style>
+
+<html>
+<body>
+	<main>
+		<div id="main">
+		  <h1 id="title">
+			Questionário sobre cenas várias</h1>
+		  <div id="Main_Block">
+			<p id="description"> 
+			  Preencha este questionário e ganhe desde já prémios fantásticos!!!!!!!!
+			</p>
+			<form id="survey-form" action="" method="get">
+				<div id="NameEmailAgeDiv">
+					<div class="LineDiv">
+						<div class="LabelDiv">
+							<label id="name-label" for="name">*Nome:  </label>
+						</div>
+						<div class="inputDiv">
+							<input id="name" type="text" name="name" placeholder="Insira o seu nome" required>
+						</div>
+					</div>
+					<div class="LineDiv">
+						<div class="LabelDiv">
+							<label id="email-label" for="email">*email: </label>
+						</div>
+						<div class="inputDiv">
+							<input id="email" type="email" name="email" placeholder="Insira o seu email" required>
+						</div>
+					</div>
+					<div class="LineDiv">
+						<div class="LabelDiv">
+							<label id="number-label" for="number">*Idade: </label>
+						</div>
+						<div class="inputDiv">
+							<input id="number" type="number" name="idade" placeholder="Idade" min="0" max="100" required>
+						</div>
+					</div>
+				</div>
+				<div class="LineDiv">
+					<div class="LabelDiv">
+						<label id="dropdown-label" for="dropdown">Qual o seu feeling agora?: </label>
+					</div>
+					<div class="inputDiv">
+						<select id="dropdown" name="dropdown">
+							<option disabled value selected>Select an option </option>
+							<option value="alive">Tipo alive...</option>
+							<option value="numsei">Num sei...</option>
+							<option value="top">TOP!!!</option>
+							<option value="murr">Murrunhenho...</option>
+						</select>
+					</div>
+				</div>
+				<div class="LineDiv">
+					<div class="LabelCenterDiv">
+						<label id="radio-label" for="radioG1">Escolha a cor favorita: </label>
+					</div>
+					<div class="inputDiv">
+						<input type="radio" name="radioG1" value="vermelho"> Vermelho
+						<br>
+						<input type="radio" name="radioG1" value="azul"> Azul
+						<br>
+						<input type="radio" name="radioG1" value="verde"> Verde
+					</div>
+				</div>
+				<div class="LineDiv">
+					<div class="LabelCenterDiv">
+						<label id="checkbox-label" for="checkboxC1">Como classifica este formulário? </label>
+					</div>
+					<div class="inputDiv">
+						<input type="checkbox" name="checkboxC1" value="treta"> Uma Treta mas enfim...
+						<br>
+						<input type="checkbox" name="checkboxC1" value="espetacular" checked> Para lá de Espetacular venha mais destes!!!
+						<br>
+						<input type="checkbox" name="checkboxC1" value="meeeh"> Meeeeeeh......
+						<br>
+					</div>
+				</div>
+				<div class="LineDiv">
+					<div class="LabelCenter2Div">
+						<label id="textarea-label" for="TextAreaT1">Escreva o que lhe vai na alma ou cale-se para sempre! </label>
+					</div>
+					<div class="inputDiv">
+						<textarea name="TextAreaT1" rows="10" cols="30">A minha alma está parva e o meu espírito taralhoco...</textarea>
+					</div>
+				</div>
+				<div class="LineDiv">
+					<input class="button" id="submit" type="submit" value="Submit">
+				</div>
+			</form>    
+		  </div>
+		</div>
+	</main>
+</body>
+</html>
