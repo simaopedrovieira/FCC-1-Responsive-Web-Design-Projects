@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<style>
+html,body{
+  margin: 0;
+  min-width:290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: 'Open Sans',Arial,sans-serif;
+    line-height: 1.5;
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+ul.navbar li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+ 
+ul.navbar li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+ul.navbar li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.navheader {
+  font-size: 25px;
+  font-weight:bold;
+  background-color: #4d4e53;
+  color: #f1f1f1;
+  padding-left:10px;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+div.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.sectionheader {
+  font-size: 20px;
+  font-weight:bold;
+}
+
+  #Subject_1 {
+    position:relative;
+    padding-top: 20px;
+  }
+  #Subject_2, #Subject_3, #Subject_4, #Subject_5 {
+    position:relative;
+    margin-top:-10px;
+    padding-top: 20px;
+  }
+
+section li {
+  margin:15px 0px 0px 20px;
+}
+
+code{
+  display:block;
+    text-align: left;
+  white-space: pre;
+  position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    background-color:#f7f7f7;
+  padding:5px;
+  margin:2px;
+    border-radius:5px;
+}
+
+@media only screen and (max-width: 900px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index:2;
+  }
+  ul.navbar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index:2;
+
+  }
+  
+  ul.navbar li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content{
+    margin-left: 0;
+  }
+  #Subject_1 {
+    position:relative;
+    padding-top: 120px;
+  }
+  #Subject_2, #Subject_3, #Subject_4, #Subject_5 {
+    position:relative;
+    margin-top:-100px;
+    padding-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  ul.navbar li a {
+    text-align: center;
+    float: none;
+  }
+    #Subject_1 {
+    position:relative;
+    padding-top: 380px;
+  }
+  #Subject_2, #Subject_3, #Subject_4, #Subject_5 {
+    position:relative;
+    margin-top:-360px;
+    padding-top: 380px;
+  }
+    div.content{
+  }
+}
+</style>
+
+<html>
+   
+  <nav id="navbar">
+    <header class="navheader">Lorem Ipsum Technical Documentation</header>
+    <ul class="navbar">
+      <li><a class="nav-link" href="#Subject_1">Subject 1</a></li>
+      <li><a class="nav-link" href="#Subject_2">Subject 2</a></li>
+      <li><a class="nav-link" href="#Subject_3">Subject 3</a></li>
+      <li><a class="nav-link" href="#Subject_4">Subject 4</a></li>
+      <li><a class="nav-link" href="#Subject_5">Subject 5</a></li>
+    </ul>
+  </nav>
+  
+  <main id="main-doc">
+    <div class="content">
+    <section class="main-section" id="Subject_1">
+      <header class="sectionheader">Subject 1</header>
+      <article>
+        <p>
+          Aliquam erat volutpat. In ultrices sem mauris, eget scelerisque metus pellentesque id. Morbi id velit fermentum, pellentesque ligula non, aliquet metus. Fusce vitae diam sit amet risus varius pulvinar at sagittis tortor. Praesent gravida convallis diam sed luctus. Ut euismod sit amet odio sed iaculis. Ut vel faucibus quam, et pharetra eros. Curabitur id felis nibh. Integer nunc massa, pharetra at diam vel, commodo cursus turpis. Ut commodo finibus faucibus. Integer interdum mi quis blandit iaculis. Curabitur in pretium ex.
+        </p>
+        <code>
+          begin::Code
+          {
+          This is some code
+          }
+          End
+        </code>
+        <li>
+          Vestibulum a purus quis arcu viverra lacinia. Suspendisse consequat lacinia mauris, at scelerisque erat fermentum eget.
+        </li>
+        <li>
+          Aenean iaculis ut mauris a varius. Nullam tincidunt ornare dolor, nec tempus lectus eleifend id. Integer tincidunt risus in quam rhoncus, commodo faucibus lectus fringilla.
+        </li>
+        <p>
+          Maecenas nec nulla convallis, eleifend libero non, viverra orci. Phasellus a dapibus tortor, nec sodales augue. Duis quis odio id ex molestie ultricies viverra ac ex. Nam non ultrices est. Suspendisse pellentesque metus quis lacus fringilla, ac porttitor sem sollicitudin. Donec ut molestie sem, nec commodo urna. Vivamus imperdiet accumsan ligula, ut faucibus ligula. Maecenas vel metus blandit est gravida commodo.
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Subject_2">
+      <header class="sectionheader">Subject 2</header>
+      <article>
+        <p>
+          Aliquam erat volutpat. In ultrices sem mauris, eget scelerisque metus pellentesque id. Morbi id velit fermentum, pellentesque ligula non, aliquet metus. Fusce vitae diam sit amet risus varius pulvinar at sagittis tortor. Praesent gravida convallis diam sed luctus. Ut euismod sit amet odio sed iaculis. Ut vel faucibus quam, et pharetra eros. Curabitur id felis nibh. Integer nunc massa, pharetra at diam vel, commodo cursus turpis. Ut commodo finibus faucibus. Integer interdum mi quis blandit iaculis. Curabitur in pretium ex.
+        </p>
+        <code>
+          begin::Code
+          {
+          This is some code
+          }
+          End
+        </code>
+        <li>
+          Vestibulum a purus quis arcu viverra lacinia. Suspendisse consequat lacinia mauris, at scelerisque erat fermentum eget.
+        </li>
+        <li>
+          Aenean iaculis ut mauris a varius. Nullam tincidunt ornare dolor, nec tempus lectus eleifend id. Integer tincidunt risus in quam rhoncus, commodo faucibus lectus fringilla.
+        </li>
+        <p>
+          Maecenas nec nulla convallis, eleifend libero non, viverra orci. Phasellus a dapibus tortor, nec sodales augue. Duis quis odio id ex molestie ultricies viverra ac ex. Nam non ultrices est. Suspendisse pellentesque metus quis lacus fringilla, ac porttitor sem sollicitudin. Donec ut molestie sem, nec commodo urna. Vivamus imperdiet accumsan ligula, ut faucibus ligula. Maecenas vel metus blandit est gravida commodo.
+        </p>
+      </article> 
+    </section>
+    <section class="main-section" id="Subject_3">
+      <header class="sectionheader">Subject 3</header>
+      <article>
+        <p>
+          Aliquam erat volutpat. In ultrices sem mauris, eget scelerisque metus pellentesque id. Morbi id velit fermentum, pellentesque ligula non, aliquet metus. Fusce vitae diam sit amet risus varius pulvinar at sagittis tortor. Praesent gravida convallis diam sed luctus. Ut euismod sit amet odio sed iaculis. Ut vel faucibus quam, et pharetra eros. Curabitur id felis nibh. Integer nunc massa, pharetra at diam vel, commodo cursus turpis. Ut commodo finibus faucibus. Integer interdum mi quis blandit iaculis. Curabitur in pretium ex.
+        </p>
+        <code>
+          begin::Code
+          {
+          This is some code
+          }
+          End
+        </code>
+        <li>
+          Vestibulum a purus quis arcu viverra lacinia. Suspendisse consequat lacinia mauris, at scelerisque erat fermentum eget.
+        </li>
+        <li>
+          Aenean iaculis ut mauris a varius. Nullam tincidunt ornare dolor, nec tempus lectus eleifend id. Integer tincidunt risus in quam rhoncus, commodo faucibus lectus fringilla.
+        </li>
+        <p>
+          Maecenas nec nulla convallis, eleifend libero non, viverra orci. Phasellus a dapibus tortor, nec sodales augue. Duis quis odio id ex molestie ultricies viverra ac ex. Nam non ultrices est. Suspendisse pellentesque metus quis lacus fringilla, ac porttitor sem sollicitudin. Donec ut molestie sem, nec commodo urna. Vivamus imperdiet accumsan ligula, ut faucibus ligula. Maecenas vel metus blandit est gravida commodo.
+        </p>
+      </article>      
+    </section>
+    <section class="main-section" id="Subject_4">
+      <header class="sectionheader">Subject 4</header>
+      <article>
+        <p>
+          Aliquam erat volutpat. In ultrices sem mauris, eget scelerisque metus pellentesque id. Morbi id velit fermentum, pellentesque ligula non, aliquet metus. Fusce vitae diam sit amet risus varius pulvinar at sagittis tortor. Praesent gravida convallis diam sed luctus. Ut euismod sit amet odio sed iaculis. Ut vel faucibus quam, et pharetra eros. Curabitur id felis nibh. Integer nunc massa, pharetra at diam vel, commodo cursus turpis. Ut commodo finibus faucibus. Integer interdum mi quis blandit iaculis. Curabitur in pretium ex.
+        </p>
+        <code>
+          begin::Code
+          {
+          This is some code
+          }
+          End
+        </code>
+        <li>
+          Vestibulum a purus quis arcu viverra lacinia. Suspendisse consequat lacinia mauris, at scelerisque erat fermentum eget.
+        </li>
+        <li>
+          Aenean iaculis ut mauris a varius. Nullam tincidunt ornare dolor, nec tempus lectus eleifend id. Integer tincidunt risus in quam rhoncus, commodo faucibus lectus fringilla.
+        </li>
+        <p>
+          Maecenas nec nulla convallis, eleifend libero non, viverra orci. Phasellus a dapibus tortor, nec sodales augue. Duis quis odio id ex molestie ultricies viverra ac ex. Nam non ultrices est. Suspendisse pellentesque metus quis lacus fringilla, ac porttitor sem sollicitudin. Donec ut molestie sem, nec commodo urna. Vivamus imperdiet accumsan ligula, ut faucibus ligula. Maecenas vel metus blandit est gravida commodo.
+        </p>
+      </article> 
+    </section>
+    <section class="main-section" id="Subject_5">
+      <header class="sectionheader">Subject 5</header>
+      <article>
+        <p>
+          Aliquam erat volutpat. In ultrices sem mauris, eget scelerisque metus pellentesque id. Morbi id velit fermentum, pellentesque ligula non, aliquet metus. Fusce vitae diam sit amet risus varius pulvinar at sagittis tortor. Praesent gravida convallis diam sed luctus. Ut euismod sit amet odio sed iaculis. Ut vel faucibus quam, et pharetra eros. Curabitur id felis nibh. Integer nunc massa, pharetra at diam vel, commodo cursus turpis. Ut commodo finibus faucibus. Integer interdum mi quis blandit iaculis. Curabitur in pretium ex.
+        </p>
+        <code>
+          begin::Code
+          {
+          This is some code
+          }
+          End
+        </code>
+        <li>
+          Vestibulum a purus quis arcu viverra lacinia. Suspendisse consequat lacinia mauris, at scelerisque erat fermentum eget.
+        </li>
+        <li>
+          Aenean iaculis ut mauris a varius. Nullam tincidunt ornare dolor, nec tempus lectus eleifend id. Integer tincidunt risus in quam rhoncus, commodo faucibus lectus fringilla.
+        </li>
+        <p>
+          Maecenas nec nulla convallis, eleifend libero non, viverra orci. Phasellus a dapibus tortor, nec sodales augue. Duis quis odio id ex molestie ultricies viverra ac ex. Nam non ultrices est. Suspendisse pellentesque metus quis lacus fringilla, ac porttitor sem sollicitudin. Donec ut molestie sem, nec commodo urna. Vivamus imperdiet accumsan ligula, ut faucibus ligula. Maecenas vel metus blandit est gravida commodo.
+        </p>
+      </article>      
+    </section>
+  </div>
+  </main>
+</html>

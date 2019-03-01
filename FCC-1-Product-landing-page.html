@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<style>
+header {
+  position: fixed;
+  font-family: aleo;
+  background-color: white;
+  margin: 0px;
+  display:flex;
+  flex-wrap: wrap; 
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-img {
+  padding-left: 50px; 
+  text-align: center;
+  line-height: 95px;
+  width: 30%;
+}
+
+.flex-link-header {
+/*  margin: 10px; */
+  padding-right: 50px;
+  text-align: center;
+  line-height: 95px;
+  font-size: 25px;
+/*  background-color: DodgerBlue; */
+}
+main {
+  background-color: #f1f1f1;
+  font-family: aleo;
+}
+
+p {
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  p {
+    padding-top: 200px;
+    }
+}
+
+.contentor {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+#Descricao{
+  margin-top: 0px;
+  padding-top:100px;
+}
+
+.grelhaDescricao {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  
+}
+.iconDescricao{
+  align-items: center;
+  text-align: right;
+  width: 30%;
+  font-size: 30px;
+  color: lightseagreen;
+}
+.txtDescricao{
+  align-items: center;
+  text-align: left;
+  width:60%;
+  padding-left: 20px;
+}
+.h1text{
+  font-size: 35px;
+  text-align: center;
+}
+.h2text{
+  font-size: 25px;
+}
+
+#Video{
+  margin-top: -80px;
+  padding-top:100px;
+}
+
+.videoCenter {
+  text-align: center;
+}
+
+#Produtos{
+  margin-top: -80px;
+  padding-top:100px;
+}
+
+.flex-container {
+  display:flex;
+  flex-wrap: wrap; 
+  width: 100%;
+  margin:0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-container-div {
+  background-color: #f1f1f1;
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 30px;
+  border-style:solid;
+  border-radius: 10px;
+  border-width: 2px;
+}
+.iconFlexContainer{
+  align-items: center;
+  font-size: 20px;
+  color: lightseagreen;
+  margin-top: 20px;
+}
+
+.buttonBuy{
+	padding:8px;
+  font-family: aleo;
+  Color: #f1f1f1;
+  font-size: 20px;
+  background-color:lightseagreen;
+  border-style:solid;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: lightseagreen;
+  transition-duration: 0.4s;
+
+}
+.buttonBuy:hover{
+  background-color:#f1f1f1;
+  Color: lightseagreen;
+  
+}
+
+#Contacto{
+  margin-top: -80px;
+  padding-top:100px;
+}
+.LineDiv{
+	display:flex;
+	margin:10px;
+	padding:2px;
+}
+.LabelDiv{
+	width: 45%;
+	text-align: right;
+}
+.inputDiv{
+	width:55%;
+	padding-left:10px;
+	text-align:left;
+}
+.button{
+	margin:auto;
+	padding:2px;
+   font-family: aleo;
+}	
+</style>
+
+<html>
+  <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <header id="header">
+    <img id="header-img" src="https://lh3.googleusercontent.com/1gUE1n02_D5nJD8lUHtd-pfTjZH1IQiEi7WHIHWtC7yS5pFSir6S7xo6C1Fq4PkJIF3N9U3HJ7yJFynCF0Lpks8k53LlVrE_gw0dAXB25FWOj_mhddZRqZzdiyfYYqody8HfXmuFsdQ">
+
+    <nav id="nav-bar" class="flex-link-header">
+      <a class="nav-link" href="#Descricao">Descrição</a>
+      <a class="nav-link" href="#Video">Vídeo</a>
+      <a class="nav-link" href="#Produtos">Produtos</a>
+      <a class="nav-link" href="#Contacto">Contactem-me</a>
+    </nav>
+  </header>
+
+  <main>
+  <div class="contentor">
+    <section id="Descricao">
+      <h1 class="h1text">Descrição da oferta Mobi Cidade</h1>
+      <div class = "grelhaDescricao">
+        <div class="iconDescricao">
+          <i class="fas fa-2x fa-bicycle"></i>
+        </div>
+        <div class="txtDescricao">
+          <h2 class="h2text"> Bike Sharing </h2>
+          <p>Sistema de partilha de bicicletas manuais e elétricas</p>
+        </div>
+      </div>
+      <div class = "grelhaDescricao">
+        <div class="iconDescricao">
+          <i class="fas fa-2x fa-bus"></i>
+        </div>
+        <div class="txtDescricao">
+          <h2 class="h2text"> Bus </h2>
+          <p>Rede de Autocarros no Território</p>
+        </div>
+      </div>
+      <div class = "grelhaDescricao">
+        <div class="iconDescricao">
+          <i class="fas fa-2x fa-parking"></i>
+        </div>
+        <div class="txtDescricao">
+          <h2 class="h2text"> Parking </h2>
+          <p>Estacionamento tarifado "on-street" e parques fechados</p>
+        </div>
+      </div>
+      <div class = "grelhaDescricao">
+        <div class="iconDescricao">
+          <i class="fas fa-2x fa-car"></i>
+        </div> 
+        <div class="txtDescricao">
+          <h2 class="h2text"> Car Sharing </h2>
+          <p>Rede de Carros elétricos partilhados</p>
+        </div>
+      </div>
+      <div class = "grelhaDescricao">
+        <div class="iconDescricao">
+          <i class="fas fa-2x fa-train"></i>
+        </div>
+        <div class="txtDescricao">
+          <h2 class="h2text"> Train </h2>
+          <p>Rede Ferroviária</p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section id="Video">
+      <h1 class="h1text">Um vídeo de uma Mobi Cidade</h1>
+<!--      <p id="Mobi-Video-Description">MobiCascais Sample Video</p> -->
+      <div class="videoCenter">
+         <iframe id="video" width="576" height="324" src="https://www.youtube.com/embed/SezrM8XaMno" frameborder="0" style="float:center" autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section id="Produtos">
+      <h1 class="h1text">Produtos da Mobi Cidade</h1>
+      <div class="flex-container">
+        <div class="flex-container-div">
+          <div class="iconFlexContainer">
+            <i class="fas fa-2x fa-bus"></i>
+            +
+            <i class="fas fa-2x fa-parking"></i>
+          </div>
+          <h2 class="h2text">BUSPARK</h2>
+          <h1 class="h1text">30 €</h1>
+          <input id="Comprar" class="buttonBuy" type="submit" value="Comprar" formaction=""></input>
+        </div>
+        <div class="flex-container-div">
+          <div class="iconFlexContainer">
+            <i class="fas fa-2x fa-train"></i>
+            +
+            <i class="fas fa-2x fa-bicycle"></i>
+          </div>
+          <h2 class="h2text">TRAINBIKE</h2>
+          <h1 class="h1text">35 €</h1>
+          <input id="Comprar" class="buttonBuy" type="submit" value="Comprar" formaction=""></input>
+        </div>
+        <div class="flex-container-div">
+          <div class="iconFlexContainer"> 
+            <i class="fas fa-2x fa-train"></i>
+            +
+            <i class="fas fa-2x fa-bicycle"></i>
+            +
+            <i class="fas fa-2x fa-bus"></i>
+            +
+            <i class="fas fa-2x fa-parking"></i>
+          </div>
+            <h2 class="h2text">MOBIALL</h2>
+            <h1 class="h1text">55 €</h1>       
+            <input id="Comprar" class="buttonBuy" type="submit" value="Comprar" formaction=""></input>
+      </div>
+    </section>
+    <section id="Contacto">
+      <h1 class="h1text">Por favor deixe o seu contacto </h1>
+      <form id="form" action="" method="get">
+        <div class="LineDiv">
+					<div class="LabelDiv">
+						<label id="email-label" for="email">*email: </label>
+					</div>
+          <div class="inputDiv">
+						<input id="email" type="email" name="email" placeholder="Insira o seu email" required>
+					</div>
+        </div>
+        <div class="LineDiv">
+          <input id="submit" class="button" type="submit" formaction="https://www.freecodecamp.com/email-submit"></input>
+        </div>
+      </form>
+    </section>
+  </div>
+  </main>
+  <footer>
+  </footer>
+
+</html>
