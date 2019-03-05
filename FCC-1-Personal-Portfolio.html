@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<style>
+	html, body{
+	  font-family: verdana;
+	}
+
+	ul.ulnavbar {
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	}
+
+	#navbar{position:fixed;}
+
+	ul.ulnavbar li {float: left;}
+
+	ul.ulnavbar li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  margin-right: 10px;
+	  text-decoration: none;
+	}
+
+	.navheader {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 10px 24px;
+	  text-decoration: none;
+	  font-size: 1.4em;
+	  background-color: #E96D07;
+	}
+
+	ul.ulnavbar li a:hover:not(.active) {background-color: #111;}
+
+	ul.ulnavbar li a.active {background-color: #E96D07;}
+
+	ul.ulnavbar li.right {float: right;}
+
+	/*
+	.content{
+	padding:40px 16px;
+	}
+	*/
+
+	@media screen and (max-width: 600px) {
+	  ul.ulnavbar li.right, 
+	  ul.ulnavbar li {float: none;}
+	/*  .content{
+		padding:180px 0px;
+		width: 100%;
+	  } */
+	  h1.otherh1 {
+	  text-align: center;
+	  font-size:5vw;
+	  margin-top: -300px;
+	  padding-top: 330px;
+	}
+	  h1.welcomeh1 {
+	  text-align: center;
+	  font-size:5vw;
+	  padding-top: 130px;
+	}
+	}
+
+	#welcome-section{
+	  top: 0;
+	  width:100%;
+	  background: #FEE3E1;
+	  /*  background: url("https://raw.githubusercontent.com/simaopedrovieira/FCC-1-Responsive-Web-Design-Projects/master/lagoon-trek.jpg");
+	  background-size: 100%;
+	  background-repeat: no-repeat;
+	  */
+	  min-height: 65vh;
+	  padding-top: 35vh;
+	}
+
+	.welcomeh1 {
+	  text-align: center;
+	  font-size:4vw;
+	}
+
+	.otherh1 {
+	  text-align: center;
+	  font-size:4vw;
+	  margin-top: -30px;
+	  padding-top: 60px;
+	}
+
+	.myprojects-flex {
+	  display:flex;
+	  flex-wrap: wrap; 
+	  width: 100%;
+	  margin:0px;
+	  justify-content: center;
+	  align-items: center;
+	  text-align: center;
+	}
+
+	.project-tile {
+	  background-color: #ffffff;
+	  width: 250px;
+	  height: 200px;
+	  margin: 10px;
+	  padding: 10px;
+	  text-align: center;
+	  line-height: 30px;
+	  font-size: 1.4em;
+	  border-style:solid;
+	  border-radius: 10px;
+	  border-width: 2px;
+	}
+
+	.pictureAbout{
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 15%;
+	  border-radius: 50%;
+	}
+</style>
+
+<html>
+  <nav id="navbar">
+    <ul class="ulnavbar">
+      <li class="navheader">::Personal Portfolio::</li>
+      <li><a href="#welcome-section">Welcome</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#github">Github</a></li>
+      <li class="right"><a href="#about">About</a></li>
+    </ul>
+  </nav>
+  
+  <main id="main-doc">
+    <div class="content">
+      <section class="welcomeclass" id="welcome-section">
+        <h1 class="welcomeh1">Welcome to my Personal Portfolio</h1>
+      </section>
+      <section class="projectsclass" id="projects">
+        <h1 class="otherh1">My Projects</h1>
+        <div class="myprojects-flex">
+          <div class="project-tile">
+            <a href="https://codepen.io/simaopedrovieira/pen/MLjZXd" target="_blank" class="project-link"><img class="projectpicture" src="https://raw.githubusercontent.com/simaopedrovieira/FCC-1-Responsive-Web-Design-Projects/master/FCC-1-Tribute-Image-I%20CON.png"></a>
+            <p>Tribute Page</p>
+          </div>
+          <div class="project-tile">
+            <a href="" target="_blank" class="project-link"><img class="projectpicture" src="https://raw.githubusercontent.com/simaopedrovieira/FCC-1-Responsive-Web-Design-Projects/master/FCC1-Survey-Image-ICON.png" alt="project"></a>
+            <p>Survey Form</p>
+          </div>
+          <div class="project-tile">
+            <a href="" target="_blank" class="project-link"><img class="projectpicture" src="https://raw.githubusercontent.com/simaopedrovieira/FCC-1-Responsive-Web-Design-Projects/master/FCC1-Product%20Landing%20ICON.png" alt="project"></a>
+            <p>Product Landing Page</p>
+          </div>
+          <div class="project-tile">
+            <a href="" target="_blank" class="project-link"><img class="projectpicture" src="https://raw.githubusercontent.com/simaopedrovieira/FCC-1-Responsive-Web-Design-Projects/master/FCC1-Technical-Documentation-ICON.png" alt="project"></a>
+          <p>Technical Documentation Page</p>
+          </div>
+        </div>
+      </section>
+      <section class="githubclass" id="github">
+        <h1 class="otherh1">Please check my <a id="profile-link" class="GithubLink" href="https://github.com/simaopedrovieira" target="_blank">GitHub</a> Page</h1>
+      </section>
+      <section class="" id="about">
+        <h1 class="otherh1">About Me</h1>
+        <a href="https://www.linkedin.com/in/simaopedrovieira1976/" target="_blank"><img class="pictureAbout" src="https://raw.githubusercontent.com/simaopedrovieira/FCC-1-Responsive-Web-Design-Projects/master/SPSV-IMG.jpg" alt="profile-picture"></a>
+      </section>
+  </div>
+  </main>
+</html>
